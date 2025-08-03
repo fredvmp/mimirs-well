@@ -1,0 +1,30 @@
+html,
+body,
+#root {
+  height: 100%;
+  background-color: rgb(20, 20, 20);
+  align-items: center;
+  align-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: transparent;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-window {
+  background-color: rgb(33, 33, 33);
+  color: rgb(232, 232, 232);
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  width: 95%;
+  height: 90%;
+  border: 0.25em solid rgb(31, 91, 46);
+  border-radius: 2.5em;
+  margin: 0 auto;
+}
