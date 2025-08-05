@@ -1,0 +1,45 @@
+.signUpWrap {
+    border: 0.2em solid rgb(111, 6, 90);
+    border-radius: 20px;
+    background-color: rgb(33, 25, 32);
+    display: inline-block;
+    width: 25%;
+    height: 80%;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+form fieldset {
+    padding: 0.3em;
+    margin: 0.1em 1em 0.1em 1em;
+    border: none;
+    /* border: 2px solid aqua; */
+    margin-bottom: 0.5em;
+}
+
+form label { 
+    display: block;
+    margin-bottom: 10px;
+    text-align: left;
+    /* margin-left: 0.5em; */
+}
+
+form input {
+    border: 0px transparent;
+    border-radius: 10px;
+    background-color: rgb(58, 58, 58);
+    color: rgb(240, 240, 240);
+    height: 2em;
+    padding: 1em;
+    width: 100%;
+    height: 30px;
+    font-size: medium;
+    font-weight: normal;
+    box-sizing: border-box;
+}
