@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import SignUpPanel from './components/panels/SignUpPanel/SignUpPanel'
+import { Rain } from './components/rain/Rain'
 
 
 
@@ -10,6 +11,7 @@ function App() {
     <>
       <div className="main-window">
         {/*<LogButton /> */}
+        <Rain />
         <SignUpPanel />
 
       </div>

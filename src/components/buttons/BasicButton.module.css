@@ -3,13 +3,13 @@
     border: 0.15em solid rgb(111, 6, 90);
     border-radius: 12px;
     display:inline-block;
-    background-color: #66004b;
+    background-color: #282828;
     width: 7em;
     margin: 0.5em
 }
 
 .wrapBasicButton:hover {
-    background-color: rgba(111, 6, 90, 0.5);
+    background-color: #1c1c1c;
 
 }
     

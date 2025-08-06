@@ -6,15 +6,6 @@ interface Props {
 
 }
 
-/* export default function BasicButton({Props}) {
-  return (
-    <div className={styles.wrapBasicButton}>
-        <p>{Props.title}</p>
-
-    </div>  
-  );
-} */
-
 export const BasicButton = ( {title}: Props ) => {
 
   return (

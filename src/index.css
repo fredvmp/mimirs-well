@@ -2,29 +2,28 @@ html,
 body,
 #root {
   height: 100%;
-  background-color: rgb(20, 20, 20);
-  align-items: center;
-  align-content: center;
-  position: relative;
+  background-color: rgb(19, 19, 19);
   overflow: hidden;
+  margin: 0 auto;
+  justify-content: center;
+
 }
 
 body {
   font-family: system-ui, sans-serif;
   background: transparent;
-  overflow: hidden;
   position: relative;
+  justify-content: center;
 }
 
 .main-window {
-  background-color: rgb(33, 33, 33);
+  background-color: #191919;
   color: rgb(232, 232, 232);
   align-items: center;
   align-content: center;
   text-align: center;
-  width: 98%;
-  height: 92%;
-  border: 0.25em solid rgb(31, 91, 46);
-  border-radius: 2.5em;
+  width: 85%;
+  height: 100%;
+  border-radius: 20%;
   margin: 0 auto;
 }
