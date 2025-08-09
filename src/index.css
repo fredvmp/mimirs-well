@@ -3,7 +3,7 @@ body,
 #root {
   height: 100%;
   background-color: rgb(19, 19, 19);
-  overflow: hidden;
+  overflow: autoscroll;
   margin: 0 auto;
   justify-content: center;
 
@@ -16,14 +16,3 @@ body {
   justify-content: center;
 }
 
-.main-window {
-  background-color: #191919;
-  color: rgb(232, 232, 232);
-  align-items: center;
-  align-content: center;
-  text-align: center;
-  width: 85%;
-  height: 100%;
-  border-radius: 20%;
-  margin: 0 auto;
-}
