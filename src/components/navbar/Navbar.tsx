@@ -1,10 +1,14 @@
 import React, { useRef, useState } from "react";
 import styles from "./Navbar.module.css";
+import { NavLink } from "react-router-dom";
 
-const LINKS = ["Enlace 1", "Enlace 2", "Enlace 3"];
+const LINKS = [
+  { label: "Home", path: "/" },
+  { label: "Login", path: "/login" },
+  { label: "Enlace 3", path: "/otro" },
+];
 
 function Navbar() {
-
   const ulRef = useRef<HTMLUListElement | null>(null);
 
   const [hlStyle, setHlStyle] = useState<{
@@ -40,7 +44,8 @@ function Navbar() {
     requestAnimationFrame(() => {
       setHlStyle((prev) => ({
         ...prev,
-        transition: "left 260ms cubic-bezier(.2,.9,.2,1), width 260ms cubic-bezier(.2,.9,.2,1), opacity 150ms linear",
+        transition:
+          "left 260ms cubic-bezier(.2,.9,.2,1), width 260ms cubic-bezier(.2,.9,.2,1), opacity 150ms linear",
       }));
     });
   };
@@ -49,16 +54,15 @@ function Navbar() {
     setHlStyle((prev) => ({ ...prev, opacity: 0 }));
   };
 
-
   return (
     <nav className={styles.navbarWindow}>
       {/* container nav */}
       <div className={styles.navbarContainer}>
         {/* logo and app´s name */}
         <div className={styles.navbarLeft}>
-            <a href="#" className={styles.navbarLogo}>
-              Logo + name
-            </a>
+          <a href="#" className={styles.navbarLogo}>
+            Logo + name
+          </a>
         </div>
 
         {/* links space */}
@@ -68,13 +72,20 @@ function Navbar() {
             ref={ulRef}
             onMouseLeave={handleMouseLeaveList}
           >
-            {LINKS.map((label) => (
+            {LINKS.map(({ label, path }) => (
               <li key={label} onMouseEnter={handleMouseEnterItem}>
-                <a href="#">{label}</a>
+                <NavLink
+                  to={path}
+                  className={({ isActive }) =>
+                    isActive ? styles.activeLink : undefined
+                  }
+                >
+                  {label}
+                </NavLink>
               </li>
             ))}
 
-            {/* highlight posicionado por estilos en linea */}
+            {/* highlight */}
             <span
               className={styles.highlight}
               style={{
@@ -87,7 +98,6 @@ function Navbar() {
             />
           </ul>
         </div>
-        
       </div>
     </nav>
   );

@@ -1,0 +1,13 @@
+.pageContainer {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(52, 50, 47);
+  margin: 0 auto;
+  border-radius: 20%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 5vh;
+}
