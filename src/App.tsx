@@ -11,7 +11,7 @@ function App() {
       <div className={styles.mainWindow}>
         <Navbar />
 
-        <div className={styles.rainContainer}>
+        <div className={styles.pageContainer}>
           <Rain />
           <SignUpPanel />
         </div> 

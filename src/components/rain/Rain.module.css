@@ -16,8 +16,8 @@
   top: -300px;
   background: linear-gradient(
     to top,
-    rgb(255, 255, 255) 0%,            /* shiny tip */ 
-    rgba(255, 255, 255, 0.6) 20%,     /* blur */
+    rgb(212, 175, 55) 0%,            /* shiny tip */ 
+    rgba(212, 175, 55, 0.6) 20%,     /* blur */
     transparent 100%                    /* gradient */
   );
   animation-name: fall;

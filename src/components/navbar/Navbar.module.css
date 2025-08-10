@@ -1,11 +1,12 @@
 .navbarWindow {
-  position: relative;
+  position: fixed;
+  top: 2.5vh; 
+  left: 50%;
+  transform: translateX(-50%);
   width: 75%;
-  height: 10vh;
+  height: 8vh;
   background-color: transparent;
-  margin: 0 auto;
-  margin-top: 2.5vh;
-  z-index: 20;  
+  z-index: 20;   
 }
 
 .navbarContainer {
@@ -19,6 +20,7 @@
   border: 1.5px solid rgba(209, 213, 219, 0.3);
   -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(5px);
+  box-sizing: border-box;
 }
 
 .navbarLogo {
@@ -30,37 +32,80 @@
 
 .navbarLogo li a {
   color: white;
-  
+  text-decoration: none;
 }
 
-.navbarLeft,
+.navbarLeft {
+  display: flex;
+  align-items: center;
+  margin-left: 5vh;
+}
+
 .navbarRight {
   display: flex;
   align-items: center;
-  margin: 2vw;
-  padding: 1.4vh 4vh 1.4vh 4vh;
-  
+  margin-right: 5vh;
 }
 
 .navbarLinks {
+  position: relative;
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
-
+  align-items: center;
 }
 
+.highlight {
+  position: absolute;
+  top: 0;
+  width: calc(100% / 3);
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.6);
+  border-radius: 2.5vh;
+  z-index: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  will-change: left, width, opacity;
+}
 
 .navbarLinks li {
-  background-color: rgb(46, 46, 46);
-  margin: 1.2vh;
-  padding: 1vh 2vh 1vh 2vh;
+  position: relative;
+  z-index: 1;
+  padding: 2vh 2.5vh;
   font-size: large;
-  border-radius: 1.5vh;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbarLinks a {
   color: white;
   text-decoration: none;
-  
+  display: inline-block;
+  line-height: 1;  
+}
+
+.navbarLinks:hover .highlight {
+  opacity: 1;
+}
+
+.navbarLinks li:nth-child(1):hover ~ .highlight {
+  left: 0;
+  width: calc(100% / 3);
+  opacity: 1;
+}
+
+.navbarLinks li:nth-child(2):hover ~ .highlight {
+  left: calc(100% / 3);
+  width: calc(100% / 3);
+  opacity: 1;
+}
+
+.navbarLinks li:nth-child(3):hover ~ .highlight {
+  left: calc(200% / 3);
+  width: calc(100% / 3);
+  opacity: 1;
 }
