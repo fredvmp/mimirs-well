@@ -27,7 +27,6 @@
   color: white;
   text-decoration: none;
   list-style: none;
-  font-size: 1.5em;
 }
 
 .navbarLogo li a {
@@ -35,11 +34,18 @@
   text-decoration: none;
 }
 
+.logoImg {
+  height: 9vh;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
 .navbarLeft {
   display: flex;
   align-items: center;
   margin-left: 5vh;
-    padding: 2vh 2.5vh;
+  padding: 2vh 2.5vh;
 
 }
 

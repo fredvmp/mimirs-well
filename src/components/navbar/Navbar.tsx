@@ -1,11 +1,12 @@
 import React, { useRef, useState } from "react";
 import styles from "./Navbar.module.css";
 import { NavLink } from "react-router-dom";
+import logo from "../../images/mimirs_well_logo.png";
 
 const LINKS = [
   { label: "Home", path: "/" },
   { label: "Login", path: "/login" },
-  { label: "Enlace 3", path: "/otro" },
+  { label: "Pruebas BBDD", path: "/pruebas" },
 ];
 
 function Navbar() {
@@ -60,8 +61,8 @@ function Navbar() {
       <div className={styles.navbarContainer}>
         {/* logo and app´s name */}
         <div className={styles.navbarLeft}>
-          <a href="#" className={styles.navbarLogo}>
-            Logo + name
+          <a href="/" className={styles.navbarLogo}>
+            <img src={logo} alt="Logo" className={styles.logoImg} />
           </a>
         </div>
 
