@@ -7,6 +7,7 @@ const LINKS = [
   { label: "Home", path: "/" },
   { label: "Login", path: "/login" },
   { label: "Pruebas BBDD", path: "/pruebas" },
+  { label: "Profile", path: "/profile" },
 ];
 
 function Navbar() {

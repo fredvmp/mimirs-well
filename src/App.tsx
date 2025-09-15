@@ -1,12 +1,10 @@
 import { useState, useEffect } from "react";
-import SignUpPanel from "./components/panels/SignUpPanel/SignUpPanel";
-import { Rain } from "./components/rain/Rain";
-import styles from "./App.module.css";
 import Navbar from "./components/navbar/Navbar";
 import { Route, Routes } from "react-router-dom";
 import LoginPage from "./components/pages/loginPage/loginPage";
 import StartupPage from "./components/pages/startupPage/startupPage";
 import TestPage from "./components/pages/testPage/testPage";
+import ProfilePage from "./components/pages/profilePage/ProfilePage";
 
 function App() {
 
@@ -25,6 +23,7 @@ function App() {
         <Route index element={<StartupPage />} />
         <Route path="login" element={<LoginPage />} />
         <Route path="pruebas" element={<TestPage />} />
+        <Route path="profile" element={<ProfilePage />} />
 
       </Routes>
 
