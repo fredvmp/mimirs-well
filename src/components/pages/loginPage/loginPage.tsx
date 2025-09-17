@@ -1,3 +1,4 @@
+import LoginPanel from "../../panels/LoginPanel/LoginPanel";
 import SignUpPanel from "../../panels/SignUpPanel/SignUpPanel";
 import { Rain } from "../../rain/Rain";
 import styles from "./LoginPage.module.css";
@@ -10,6 +11,7 @@ function LoginPage() {
                 
                 <Rain />
                 <SignUpPanel />
+                <LoginPanel />
 
             </div>
 

@@ -1,0 +1,47 @@
+.loginWrap {
+  border-radius: 20px;
+  background-color: rgba(43, 30, 42, 0.3);
+  border: 2px solid rgb(111, 6, 90, 0.3);
+  display: inline-block;
+  width: 30%;
+  height: 80%;
+  z-index: 10;
+  margin: 0 auto;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(5px);
+  color: rgb(235, 235, 235);
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+}
+
+form fieldset {
+  padding: 0.3em;
+  margin: 0.1em 1em 0.1em 1em;
+  border: none;
+  margin-bottom: 0.2em;
+}
+
+form label {
+  display: block;
+  margin: 0.2em;
+  text-align: left;
+}
+
+form input {
+  border: 0px transparent;
+  border-radius: 10px;
+  background-color: rgb(58, 58, 58);
+  color: rgb(240, 240, 240);
+  padding: 1em;
+  width: 100%;
+  height: 30px;
+  font-size: 16px;
+  font-weight: normal;
+  box-sizing: border-box;
+}
